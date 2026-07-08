@@ -4,145 +4,303 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dewan - Profile</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f4f6f8;
+      color: #222;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: #1f3a5f;
+      color: #ffffff;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      max-width: 850px;
+      font-size: 17px;
+      color: #e6edf5;
+    }
+
+    main {
+      padding: 35px 40px 45px;
+    }
+
+    section {
+      padding: 24px 0;
+      border-bottom: 1px solid #e3e7eb;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: #1f3a5f;
+      font-size: 24px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #d7e3f3;
+    }
+
+    h3 {
+      color: #334155;
+      font-size: 18px;
+      margin: 18px 0 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    ul {
+      margin-left: 22px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px 24px;
+    }
+
+    .grid li {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 12px;
+      list-style-position: inside;
+      margin-bottom: 0;
+    }
+
+    .references {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .reference-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .reference-card h3 {
+      margin-top: 0;
+      color: #1f3a5f;
+    }
+
+    .note {
+      background: #fef9c3;
+      border-left: 4px solid #ca8a04;
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: #5f4700;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 15px;
+      }
+
+      header {
+        padding: 28px;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+
+      main {
+        padding: 25px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>Jan Lodewyk Pretorius CV</h1>
-    <p>
-      I studied at Varsity College for a Diploma in Computer and Information Sciences
-      in Application Development, achieving an 84% average, and later obtained my Bachelor's degree.
-    </p>
-  </header>
+  <div class="container">
 
-  <main>
-
-    <section>
-      <h2>Skills and Positive Traits</h2>
-      <ul>
-        <li>I am bilingual and can speak English and Afrikaans.</li>
-        <li>I am good at critical thinking and problem solving.</li>
-        <li>I am good at conflict resolution.</li>
-        <li>I value honesty, good communication, clarity, perseverance, and curiosity.</li>
-        <li>I aim to see the bigger picture and understand underlying processes.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Software Languages I Can Use</h2>
-      <ul>
-        <li>C#</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>SQL</li>
-        <li>PHP</li>
-        <li>PL/SQL (Oracle)</li>
-        <li>Dart, for Flutter development</li>
-        <li>TypeScript</li>
-        <li>Java</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Professional Skills</h2>
-      <ul>
-        <li>Effective communication in a business environment</li>
-        <li>Project management</li>
-        <li>Agile development</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Database design and management</li>
-        <li>Software testing and quality assurance</li>
-        <li>Interface design and testing</li>
-        <li>Software system design</li>
-        <li>Programming design and logic</li>
-        <li>Principles of information security</li>
-        <li>Basic experience working with APIs</li>
-        <li>Basic Azure functionalities</li>
-        <li>Experience with Angular and Kendo, using Formly and Microsoft Graph API</li>
-        <li>Very good at finding bugs</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Other Courses and Certificates</h2>
-      <ul>
-        <li>
-          Short Course on Project Management Principles in Organizations at the
-          University of Pretoria, completed in 2018
-        </li>
-        <li>Dale Carnegie Generation Next course</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Applications I Am Proficient In</h2>
-      <ul>
-        <li>Microsoft Word, Access, Excel, and PowerPoint</li>
-        <li>Visio</li>
-        <li>Axure</li>
-        <li>Microsoft SQL Server Management Studio</li>
-        <li>Android Studio</li>
-        <li>Power Apps</li>
-        <li>Azure DevOps</li>
-        <li>Power UX</li>
-        <li>Microsoft Graph Explorer</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Work Experience</h2>
+    <header>
+      <h1>Dewan</h1>
       <p>
-        I worked at STRATO, where I helped with the training of a new fleet management system.
-        I have also worked at Braintree for almost three years.
+        I studied at Varsity College for a Diploma in Computer and Information Sciences
+        in Application Development, achieving an 84% average, and later obtained my Bachelor's degree.
       </p>
-    </section>
+    </header>
 
-    <section>
-      <h2>More About Me</h2>
-      <p>
-        People call me Dewan. I am curious and love learning new things. My other interests
-        include architecture and drawing. Family is very important to me.
-      </p>
-    </section>
+    <main>
 
-    <section>
-      <h2>Goals and Aspirations</h2>
-      <p>
-        My current main short-term goals are to upskill myself and gain as much experience as possible.
-        My current long-term goal is to develop my skills in the workplace and establish and further
-        myself in the industry.
-      </p>
-      <p>
-        I aspire to continue learning and improving wherever I may find myself.
-      </p>
-    </section>
+      <section>
+        <h2>Skills and Positive Traits</h2>
+        <ul>
+          <li>I am bilingual and can speak English and Afrikaans.</li>
+          <li>I am good at critical thinking and problem solving.</li>
+          <li>I am good at conflict resolution.</li>
+          <li>I value honesty, good communication, clarity, perseverance, and curiosity.</li>
+          <li>I aim to see the bigger picture and understand underlying processes.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Previous Job References</h2>
+      <section>
+        <h2>Software Languages I Can Use</h2>
+        <ul class="grid">
+          <li>C#</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SQL</li>
+          <li>PHP</li>
+          <li>PL/SQL (Oracle)</li>
+          <li>Dart, for Flutter development</li>
+          <li>TypeScript</li>
+          <li>Java</li>
+        </ul>
+      </section>
 
-      <h3>STRATO</h3>
-      <ul>
-        <li>Mervyn Coopen: 082 496 8211</li>
-        <li>Mohamed Muzaffar: 082 490 5746</li>
-      </ul>
+      <section>
+        <h2>Professional Skills</h2>
+        <ul class="grid">
+          <li>Effective communication in a business environment</li>
+          <li>Project management</li>
+          <li>Agile development</li>
+        </ul>
+      </section>
 
-      <h3>Braintree</h3>
-      <ul>
-        <li>Pieter Cornelius: 068 621 5334</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Technical Skills</h2>
+        <ul class="grid">
+          <li>Database design and management</li>
+          <li>Software testing and quality assurance</li>
+          <li>Interface design and testing</li>
+          <li>Software system design</li>
+          <li>Programming design and logic</li>
+          <li>Principles of information security</li>
+          <li>Basic experience working with APIs</li>
+          <li>Basic Azure functionalities</li>
+          <li>Experience with Angular and Kendo, using Formly and Microsoft Graph API</li>
+          <li>Very good at finding bugs</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>DISD Academic Report</h2>
-      <p>To be added.</p>
-    </section>
+      <section>
+        <h2>Other Courses and Certificates</h2>
+        <ul>
+          <li>
+            Short Course on Project Management Principles in Organizations at the
+            University of Pretoria, completed in 2018.
+          </li>
+          <li>Dale Carnegie Generation Next course.</li>
+        </ul>
+      </section>
 
-  </main>
+      <section>
+        <h2>Applications I Am Proficient In</h2>
+        <ul class="grid">
+          <li>Microsoft Word, Access, Excel, and PowerPoint</li>
+          <li>Visio</li>
+          <li>Axure</li>
+          <li>Microsoft SQL Server Management Studio</li>
+          <li>Android Studio</li>
+          <li>Power Apps</li>
+          <li>Azure DevOps</li>
+          <li>Power UX</li>
+          <li>Microsoft Graph Explorer</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <p>
+          I worked at STRATO, where I helped with the training of a new fleet management system.
+          I have also worked at Braintree for almost three years.
+        </p>
+      </section>
+
+      <section>
+        <h2>More About Me</h2>
+        <p>
+          People call me Dewan. I am curious and love learning new things. My other interests
+          include architecture and drawing. Family is very important to me.
+        </p>
+      </section>
+
+      <section>
+        <h2>Goals and Aspirations</h2>
+        <p>
+          My current main short-term goals are to upskill myself and gain as much experience as possible.
+          My current long-term goal is to develop my skills in the workplace and establish and further
+          myself in the industry.
+        </p>
+        <p>
+          I aspire to continue learning and improving wherever I may find myself.
+        </p>
+      </section>
+
+      <section>
+        <h2>Previous Job References</h2>
+
+        <div class="references">
+          <div class="reference-card">
+            <h3>STRATO</h3>
+            <ul>
+              <li>Mervyn Coopen: 082 496 8211</li>
+              <li>Mohamed Muzaffar: 082 490 5746</li>
+            </ul>
+          </div>
+
+          <div class="reference-card">
+            <h3>Braintree</h3>
+            <ul>
+              <li>Pieter Cornelius: 068 621 5334</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>DISD Academic Report</h2>
+        <p class="note">To be added.</p>
+      </section>
+
+    </main>
+
+  </div>
 
 </body>
 </html>
+
