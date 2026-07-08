@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - DewanCV
+name: Build and deploy Node.js app to Azure Web App - DewanCv
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8B25A08FA8B941C29BE6C699FEB67093 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BF0F416B4C334F79AC0F24BD21B044EA }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EDC00A50D34C468CA03AB748C2907E49 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E2FBFBA0644F46BB8FAA6FBC58CDC0D0 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_73192C622A054133AF4B21A0ADE5D5C5 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_849946E806A14AAC922FF128CDA41704 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'DewanCV'
+          app-name: 'DewanCv'
           slot-name: 'Production'
           package: .
           
