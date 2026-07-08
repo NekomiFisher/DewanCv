@@ -1,0 +1,144 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f4f6f8;
+      color: #222;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: #1f3a5f;
+      color: #ffffff;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      max-width: 850px;
+      font-size: 17px;
+      color: #e6edf5;
+    }
+
+    main {
+      padding: 35px 40px 45px;
+    }
+
+    section {
+      padding: 24px 0;
+      border-bottom: 1px solid #e3e7eb;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: #1f3a5f;
+      font-size: 24px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #d7e3f3;
+    }
+
+    h3 {
+      color: #334155;
+      font-size: 18px;
+      margin: 18px 0 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    ul {
+      margin-left: 22px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px 24px;
+    }
+
+    .grid li {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 12px;
+      list-style-position: inside;
+      margin-bottom: 0;
+    }
+
+    .references {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .reference-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .reference-card h3 {
+      margin-top: 0;
+      color: #1f3a5f;
+    }
+
+    .note {
+      background: #fef9c3;
+      border-left: 4px solid #ca8a04;
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: #5f4700;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 15px;
+      }
+
+      header {
+        padding: 28px;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+
+      main {
+        padding: 25px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+    }
